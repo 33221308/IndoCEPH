@@ -1,5 +1,1 @@
-IndoCEPH, designed to support the development of robust AI solutions for quantitative morphometric analysis. 
-IndoCEPH includes 1,246 cephalometric radiographs with 17 anatomical landmarks from the Indonesian population, 
-selected through a rigorous process and tested for inter-observer reliability, 
-as well as evaluated for deep learning model performance. 
-The IndoCEPH dataset was used to train the deep learning algorithm. We conducted experiments using the YOLOv9 algorithm!
+This repository adapts the official [YOLOv9](https://arxiv.org/abs/2402.13616) implementation to detect 17 cephalometric landmarks in lateral cephalograms. Each landmark is represented as a small object bounding box; its predicted box center is used as the landmark coordinate. Training with `train.py` adds an angular consistency term for eight clinically relevant landmark configurations to the standard box, classification, and distribution focal losses.
